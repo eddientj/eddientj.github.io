@@ -34,32 +34,28 @@ img {
   height: auto;
 }
 
-.section-container {
-  width: 100%;
-  height: 100%;
-  background-color: gray;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column; /* Stack the items in a column and reverse their order */
+  }
 }
 
 .container {
-  width: 1200px;
   height: 715px;
   background-color: white;
   display: flex;
-  flex-direction: row;
 }
 
 .left-content {
   position: relative;
   display: flex;
   background-color: white;
-  width: 55%;
+  width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: left;
-  padding-left: 120px; 
+  padding: 100px 120px;
+  flex-direction: column;
 }
 
 .left-content::before {
@@ -109,13 +105,12 @@ img {
 }
 
 .right-content {
-  margin: 20px;
-  display: flex;
-  width: 45%;
+  padding: 50px;
+  width: 100%;
   align-items: start;
   justify-content: center;
   background-color: white;
-  flex-direction: column;
+  flex-direction: column-reverse;
 }
 
 .right-content .top-notice-content
@@ -130,43 +125,20 @@ img {
   right: 0;
 }
 
-.time
-{
-  font-family: Arial, Helvetica, sans-serif;
-  padding-top: 50px;
-  align-items: left;
-}
-
 .info-icon {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  background-color: #ABEBC6; /* Replace this with the background color you want for the icon */
   margin-left: 5px;
-  cursor: pointer;
 }
 
-/* Here you can add your own custom "info" icon, such as an "i" or an image */
-.question-icon::before {
-  content: "?"; /* Replace with your desired icon content, or use an image with background-image */
-  display: block;
-  text-align: center;
-  line-height: 20px; /* Make sure this matches the height of the .info-icon element */
-  color: white; /* Replace with the color you want for the icon */
-}
-
-.top-notice-content .info-icon {
-  width: 20px;
-  height: 20px;
-  background-color: transparent; /* You can change the background color */
-  border-radius: 4px; /* Adjust the border-radius for a square shape */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color:#186A3B ; /* You can change the icon color */
-  font-weight: bold;
-  border: 2px solid #186A3B;
+.info-icon:hover
+{
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  content: url("/assets/img/icon_info_red.png");
 }
 
 .notice-text{
@@ -178,4 +150,84 @@ img {
   color: #186A3B ;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
+}
+
+.market-data
+{
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column
+}
+
+.time
+{
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 20px;
+  align-items: left;
+  font-weight: bolder;
+  font-size: 21px;
+  color: #186A3B;
+}
+
+.question-icon{
+  width: 25px;
+  height: 25px;
+}
+
+.question-icon::before {
+  display: flex;
+}
+
+.right-content-title
+{
+  padding-top: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: grey;
+}
+
+.trading-title
+{
+  padding-top: 30px;
+  padding-bottom: 15px;
+  color: lightskyblue; 
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+.trading-day-container
+{
+  justify-content: space-between
+}
+
+.trading-day-content
+{
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 10px;
+  display: flex;
+}
+
+.trading-day-content div:nth-child(2) {
+  margin-left: auto;
+}
+
+.orderbook-title
+{
+  display: flex;
+  color: lightskyblue; 
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+.orderbook-content
+{
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 10px;
+  display: flex;
+}
+
+.orderbook-content div:nth-child(2)
+{
+  margin-left: auto;
 }

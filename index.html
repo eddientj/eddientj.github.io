@@ -1,54 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assesessment Webpage</title>
   </head>
   <body>
     <div id="app">
-      <section class="section-container">
+      <section>
         <div class="container">
           <div class="left-content">
             <a class="logo" href="https://www.agmo.group/about-us-2/" target="_blank">
-              <img src="./assets/img/agmo_logo.png" alt="Company Logo">
+              <img src="/assets/img/agmo_logo.png" alt="Company Logo">
             </a>
-            <h2 >Making Lives Better with Technology</h2>
+            <h2>Making Lives Better with Technology</h2>
           </div>
-
           <div class="right-content">
             <div class="top-notice-content">
-                <div class="info-icon">i</div>
-                <div style="padding-left: 15px; display: flex; flex-direction: column">
+                <img class="info-icon" src="/assets/img/icon_info.png" alt="info icon">
+                <div class="market-data">
                   <div class="notice-text">Market to close on</div>
                   <div class="notice-text-bold">Mon, 17 October 2022, 10.00 PM</div>
                 </div>
             </div>
-            <div class="time">1d:4h:35m:3s <span class="question-icon"></span></div>
-            <div>market operating hours</div>
+            <div class="time">1d:4h:35m:3s <img class="question-icon" src="/assets/img/icon_question.png" alt="info icon"></div>
+            <div class="right-content-title">Market Operating Hours</div>
             <div class="trading-day-container">
-              <div>trading</div>
-              <div class="trading-day-content" style="display: flex">
+              <div class="trading-title">TRADING</div>
+              <div class="trading-day-content">
                 <div>Wednesday</div>
-                <div>10am-10pm</div>
+                <div>10:00 AM - 10:00 PM</div>
               </div>
-              <div class="trading-day-content" style="display: flex">
-                <div>Wednesday</div>
-                <div>10am-10pm</div>
+              <div class="trading-day-content">
+                <div>Thursday</div>
+                <div>10:00 AM - 10:00 PM</div>
               </div>
               <hr/>
             </div>
 
             <div class="orderbook-container">
-              <div>trading</div>
-              <div class="orderbook-content" style="display: flex">
-                <div>Wednesday</div>
-                <div>10am-10pm</div>
+              <div class="orderbook-title">ORDER BOOK</div>
+              <div class="orderbook-content">
+                <div>Monday</div>
+                <div>10:00 AM Onwards</div>
               </div>
-              <div class="orderbook-content" style="display: flex">
+              <div class="orderbook-content">
+                <div>Tuesday</div>
+                <div>All Day</div>
+              </div>
+              <div class="orderbook-content">
                 <div>Wednesday</div>
-                <div>10am-10pm</div>
+                <div>All Day</div>
+              </div>
+              <div class="orderbook-content">
+                <div>Thursday</div>
+                <div>All Day</div>
+              </div>
+              <div class="orderbook-content">
+                <div>Friday</div>
+                <div>Until 10:00 PM</div>
               </div>
             </div>
           </div>
